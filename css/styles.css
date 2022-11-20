@@ -644,6 +644,7 @@ img {
   height: 4px;
   left: 0;
   bottom: 0;
+  transform: scaleX(1.1);
   background: var(--color-blue);
   border-radius: 2px;
 }
@@ -704,6 +705,15 @@ img {
   justify-content: center; */
   background-color: transparent;
   cursor: pointer;
+  transition-property: background-color, fill;
+  transition-duration: var(--time);
+  transition-timing-function: var(--timing-function-hover);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: var(--color-blue);
+  fill: var(--color-white);
 }
 
 .is-hidden {
